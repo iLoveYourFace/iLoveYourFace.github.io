@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <script src="navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta charset="utf-8" />
+    <title>JACKEDUNPHY - Home</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="index.html" id="logo">JACKEDUNPHY.</a>
+        <div id="navbar-right">
+            <a href="index.html" style="font-weight: 400" class="active">HOME</a>
+            <a style="font-weight: 400">|</a>
+            <div class="dropdown">
+                <a href="Portfolio.html" style="font-weight: 400">PORTFOLIO</a>
+                <div class="dropdown-content">
+                    <a style="font-weight: 400" href="Portfolio.html#PLAYABLE">> PLAYABLE</a>
+                    <a style="font-weight: 400" href="Portfolio.html#PC">> DESKTOP</a>
+                    <a style="font-weight: 400" href="Portfolio.html#OTHER">> OTHER</a>
+                    <a style="font-weight: 400" href="Portfolio.html#RECENT">> RECENT</a>
+                </div>
+            </div>
+            <a style="font-weight: 400">|</a>
+            <a href="About.html" style="font-weight: 400">ABOUT </a>
+            <a style="font-weight: 400">|</a>
+            <a href="contact.html" style="font-weight: 400">CONTACT</a>
+        </div>
+    </div>
+
+    <div class="bgimg-7" id="home">
+        <div class="insideplx">
+            <div class="insideplxp">
+                <div class="textChanging mySlides fade">UNITY DEVELOPER</div>
+                <div class="textChanging mySlides fade">PROGRAMMER</div>
+                <div class="textChanging mySlides fade">DESIGNER</div>
+                <hr class="new1">
+                <h3>/* Published several games as a team and individually, primarily working as a programmer and game designer, also delving into other roles. Experience developing for multiple platforms including Mobile, PC, VR, and Web. Graduate of the Bachelor of Games and Interactive Design at University of Canberra. */</h3>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <div class="video-responsive">
+        <iframe style="border: none" width="560" height="315" src="https://www.youtube.com/embed/sLqdmE6gWJQ" allowfullscreen></iframe>
+    </div>
+
+    <div class="bgimg-1">
+        <div class="insideplx2">
+        </div>
+    </div>
+
+    <div class="section1">
+        <div class="grid-container sideMargin">
+            <div class="grid-item  topMargin">
+                <img src="Images/LinkedIn-logo.png" class="imgLogo" alt="LinkedIn logo">
+                <h3>LinkedIn <br>
+                    Qualifications and Experience.</h3>
+                <div class="textAlignCentre"><a href="https://www.linkedin.com/in/jackedunphy/">Learn more</a></div>
+
+            </div>
+            <div class="grid-item  topMargin">
+                <img src="Images/Itch-logo.png" class="imgLogo" alt="Itch.io logo">
+                <h3>Itch.io <br>
+                    Some of my published games.</h3>
+                <div class="textAlignCentre"><a href="https://iloveyourface.itch.io/">Learn more</a></div>
+            </div>
+            <div class="grid-item  topMargin">
+                <img src="Images/Insta-logo.png" class="imgLogo" alt="Instagram logo">
+                <h3>Instagram <br>
+                    The imagery of my latest projects.</h3>
+                <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Learn more</a></div>
+            </div>
+        </div>
+
+        <div class="grid-container sideMargin">
+            <div class="grid-item  bottomMargin  topMargin">
+                <img src="Images/Sketchfab-logo2.png" class="imgLogo" alt="Sketchfab logo">
+                <h3>Sketchfab <br>
+                    My 3D art assets.</h3>
+                <div class="textAlignCentre"><a href="https://sketchfab.com/iLoveYourFace">Learn more</a></div>
+            </div>
+            <div class="grid-item  bottomMargin topMargin ">
+                <img src="Images/Play-Logo.png" class="imgLogo" alt="Google Play logo">
+                <h3>Google Play <br>
+                    My games published on Android.</h3>
+                <div class="textAlignCentre"><a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">Learn more</a></div>
+            </div>
+            <div class="grid-item  bottomMargin topMargin ">
+                <img src="Images/Twitter-logo.png" class="imgLogo" alt="Twitter Logo">
+                <h3>Twitter <br>
+                    Follow me!</h3>
+                <div class="textAlignCentre"><a href="https://twitter.com/jackedunphy">Learn more</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg-2">
+        <div class="insideplx2">
+        </div>
+    </div>
+
+    <!-- Place <div> tag where you want the feed to appear -->
+    <div class="sideMargin topMargin bottomMargin">
+        <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+    </div>
+
+
+    <script>
+        (function() {
+            var i, e, d = document,
+                s = "script";
+            i = d.createElement("script");
+            i.async = 1;
+            i.src = "https://cdn.curator.io/published/79c8b745-d107-415b-9dbf-2e7694c91276.js";
+            e = d.getElementsByTagName(s)[0];
+            e.parentNode.insertBefore(i, e);
+        })();
+    </script>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+
+
+</body></html>
