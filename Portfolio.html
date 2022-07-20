@@ -6,31 +6,20 @@
     <script src="navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#Header').load('Header.html')
+            $('#Socials').load('Socials.html')
+        });
+
+    </script>
+    <div id="Header"></div>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="index.html" id="logo">JACKEDUNPHY.</a>
-        <div id="navbar-right">
-            <a href="index.html" style="font-weight: 400">HOME</a>
-            <a style="font-weight: 400">|</a>
-            <div class="dropdown">
-                <a href="Portfolio.html" style="font-weight: 400" class="active">PORTFOLIO</a>
-                <div class="dropdown-content">
-                    <a style="font-weight: 400" href="Portfolio.html#3D">> 3D ART</a>
-                    <a style="font-weight: 400" href="Portfolio.html#PLAYABLE">> PLAYABLE</a>
-                    <a style="font-weight: 400" href="Portfolio.html#DESIGN">> DESIGN</a>
-                    <a style="font-weight: 400" href="Portfolio.html#RECENT">> RECENT</a>
-                </div>
-            </div>
-            <a style="font-weight: 400">|</a>
-            <a href="About.html" style="font-weight: 400">ABOUT </a>
-            <a style="font-weight: 400">|</a>
-            <a href="contact.html" style="font-weight: 400">CONTACT</a>
-        </div>
-    </div>
-
+    <!--Top and Buttons-->
     <div class="bgimg-7">
         <div class="insideplx">
             <div class="insideplxp">
@@ -45,16 +34,18 @@
                     </div>
 
                     <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
-                        <button onclick="location.href='#PLAYABLE'">PLAYABLE</button>
-                    </div>
-
-                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
                         <button onclick="location.href='#DESIGN'">DESIGN</button>
                     </div>
 
                     <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
+                        <button onclick="location.href='#PLAYABLE'">PLAYABLE</button>
+                    </div>
+
+                    <!--
+                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
                         <button onclick="location.href='#RECENT'">RECENT</button>
                     </div>
+-->
                 </div>
             </div>
         </div>
@@ -184,52 +175,6 @@
         <h1><br></h1>
     </div>
 
-    <div id="PLAYABLE" style="">
-        <h1><br>PLAYABLE</h1>
-        <p style="text-align: center">(CLICK AN IMAGE TO PLAY)</p>
-
-        <div class="game-div">
-            <div class="row">
-                <div class="game-column game-left" style="">
-                    <a href="anotherRunnerGame.html"><img class="game" src="Images/AnotherRunner.jpg" alt="Another Runner Game"></a>
-                </div>
-                <div class="game-column game-right" style="">
-                    <h2>ANOTHER RUNNER</h2>
-                    Programming and Design by me. Created over a week.
-                    <br><br>
-                    <p>Beat your highscore and buy donuts with the coins collected. You know the drill.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="game-div">
-            <div class="row">
-                <div class="game-column game-right" style="text-align: right">
-                    <h2>R.O.O.S.</h2>
-                    Programming and Design by me. Created for the Ludum dare game jam.
-                    <br><br>
-                    <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
-                </div>
-                <div class="game-column game-left" style="">
-                    <a href="roosGame.html"><img class="game" src="Images/roos.jpg" alt="Running Out of Space Game"></a>
-                </div>
-            </div>
-        </div>
-        <!--
-<div class="game-div">
-    <div class="row">
-        <div class="game-column game-left" style="">
-            <a href="restGame.html"><img class="game" src="Images/NeonGame2.png" alt="REST Game"></a>
-        </div>
-        <div class="game-column game-right" style="">
-            <h2>REST</h2>
-            <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
-        </div>
-    </div>
-</div>
--->
-    </div>
-
     <div class="game-div" id="DESIGN">
         <h1><br>DESIGN<br><br></h1>
         <div class="game-div">
@@ -242,8 +187,11 @@
 
                 <div class="game-column game-right" style="">
                     <h2>Plane Crash Level Design - UE5</h2>
-                    <p>The plan for this project was to utilize this plane asset in a short linear level design while learning UE5.
-                        Created using existing assets and Megascans + UE5 modelling tools.</p>
+                    <p>
+                        Created using existing assets (not my own) and Megascans + UE5 modelling tools.
+                        <br><br>
+                        The plan for this project was to utilize this plane asset in a short linear level design while learning UE5.
+                    </p>
                 </div>
 
                 <div class="game-column game-left" style="">
@@ -262,6 +210,52 @@
                     <img class="game" src="Images/pce3.jpg" alt="Another Runner Game">
                 </div>
             </div>
+        </div>
+
+        <div id="PLAYABLE" style="">
+            <h1><br>PLAYABLE</h1>
+            <p style="text-align: center">(CLICK AN IMAGE TO PLAY)</p>
+
+            <div class="game-div">
+                <div class="row">
+                    <div class="game-column game-left" style="">
+                        <a href="anotherRunnerGame.html"><img class="game" src="Images/AnotherRunner.jpg" alt="Another Runner Game"></a>
+                    </div>
+                    <div class="game-column game-right" style="">
+                        <h2>ANOTHER RUNNER</h2>
+                        Programming and Design by me. Created over a week.
+                        <br><br>
+                        <p>Beat your highscore and buy donuts with the coins collected. You know the drill.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-div">
+                <div class="row">
+                    <div class="game-column game-right" style="text-align: right">
+                        <h2>R.O.O.S.</h2>
+                        Programming and Design by me. Created for the Ludum dare game jam.
+                        <br><br>
+                        <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
+                    </div>
+                    <div class="game-column game-left" style="">
+                        <a href="roosGame.html"><img class="game" src="Images/roos.jpg" alt="Running Out of Space Game"></a>
+                    </div>
+                </div>
+            </div>
+            <!--
+<div class="game-div">
+    <div class="row">
+        <div class="game-column game-left" style="">
+            <a href="restGame.html"><img class="game" src="Images/NeonGame2.png" alt="REST Game"></a>
+        </div>
+        <div class="game-column game-right" style="">
+            <h2>REST</h2>
+            <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
+        </div>
+    </div>
+</div>
+-->
         </div>
         <!--      <div class="row">
             <div class="column">
@@ -321,7 +315,7 @@
         <div class="insideplx2">
         </div>
     </div>
-
+    <!--
     <h1 id="RECENT"><br>RECENT</h1>
     <h3>All recent work can be seen on my Instagram</h3>
     <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Click Here</a></div>
@@ -329,74 +323,15 @@
     <div class="sideMargin topMargin bottomMargin">
         <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
     </div>
+-->
+    <div id="Socials"></div>
 
     <div class="bgimg-2">
         <div class="insideplx2">
         </div>
     </div>
 
-    <div class="section1">
-        <div class="grid-container sideMargin">
-            <div class="grid-item  topMargin">
-                <a href="https://www.linkedin.com/in/jackedunphy/">
-                    <img src="Images/LinkedIn-logo.png" class="imgLogo" alt="LinkedIn logo">
-                </a>
-                <h3>LinkedIn <br>
-                    Qualifications and Experience.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.linkedin.com/in/jackedunphy/">Learn more</a></div>-->
-
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://iloveyourface.itch.io/">
-                    <img src="Images/Itch-logo.png" class="imgLogo" alt="Itch.io logo">
-                </a>
-                <h3>Itch.io <br>
-                    Some of my published games.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://iloveyourface.itch.io/">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://www.instagram.com/jackedunphy">
-                    <img src="Images/Insta-logo.png" class="imgLogo" alt="Instagram logo">
-                </a>
-                <h3>Instagram <br>
-                    The imagery of my latest projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Learn more</a></div>-->
-            </div>
-        </div>
-
-        <div class="grid-container sideMargin">
-            <div class="grid-item  bottomMargin  topMargin">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Sketchfab-logo2.png" class="imgLogo" alt="Sketchfab logo">
-                </a>
-                <h3>Sketchfab <br>
-                    My 3D art assets.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://sketchfab.com/iLoveYourFace">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Play-Logo.png" class="imgLogo" alt="Google Play logo">
-                </a>
-                <h3>Google Play <br>
-                    My games published on Android.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://www.artstation.com/iloveyourface">
-                    <img src="Images/Artstation-logo.png" class="imgLogo" alt="Artstation Logo">
-                </a>
-                <h3>Artstation<br>
-                    My latest art projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://twitter.com/jackedunphy">Learn more</a></div>-->
-            </div>
-        </div>
-    </div>
-
-    <div class="bgimg-2">
-        <div class="insideplx2">
-        </div>
-    </div>
-
+    <!--
     <script>
         (function() {
             var i, e, d = document,
@@ -409,6 +344,7 @@
         })();
 
     </script>
+-->
 
 
 </body>

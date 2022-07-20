@@ -6,52 +6,53 @@
     <script src="navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta charset="utf-8" />
-    <title>JACKEDUNPHY - Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#Header').load('Header.html')
+            $('#Socials').load('Socials.html')
+        });
+
+    </script>
+    <div id="Header"></div>
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="index.html" id="logo">JACKEDUNPHY.</a>
-        <div id="navbar-right">
-            <a href="index.html" style="font-weight: 400">HOME</a>
-            <a style="font-weight: 400">|</a>
-            <div class="dropdown">
-                <a href="Portfolio.html" style="font-weight: 400" class="active">PORTFOLIO</a>
-                <div class="dropdown-content">
-                    <a style="font-weight: 400" href="Portfolio.html#3D">> 3D ART</a>
-                    <a style="font-weight: 400" href="Portfolio.html#PLAYABLE">> PLAYABLE</a>
-                    <a style="font-weight: 400" href="Portfolio.html#DESIGN">> DESIGN</a>
-                    <a style="font-weight: 400" href="Portfolio.html#RECENT">> RECENT</a>
-                </div>
-            </div>
-            <a style="font-weight: 400">|</a>
-            <a href="About.html" style="font-weight: 400">ABOUT </a>
-            <a style="font-weight: 400">|</a>
-            <a href="contact.html" style="font-weight: 400">CONTACT</a>
-        </div>
-    </div>
-
-    <div class="bgimg-7" id="home">
+    <!--Top and Buttons-->
+    <div class="bgimg-7">
         <div class="insideplx">
             <div class="insideplxp">
-                <div class="textChanging mySlides fade">3D ARTIST</div>
-                <div class="textChanging mySlides fade">LEVEL DESIGNER</div>
-                <div class="textChanging mySlides fade">DEVELOPER</div>
+                <div class="textChanging">PORTFOLIO</div>
                 <hr class="new1">
-                <h3>Self-driven 3D artist/designer having published several games as a team and individually, primarily working as a programmer and game designer, also delving into other roles. Experience developing for multiple platforms including Mobile, PC, VR, and Web. Graduate of the Bachelor of Games and Interactive Design at University of Canberra.</h3>
+                <h3>This Portfolio is divided into several sections relating to different skills and disiplines. You can skip to a particular section by selecting one of the buttons below<br><br> </h3>
+
+                <div class="grid-container-portfolio-buttons sideMargin">
+
+                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
+                        <button onclick="location.href='#3D'">3D ART</button>
+                    </div>
+
+                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
+                        <button onclick="location.href='#DESIGN'">DESIGN</button>
+                    </div>
+
+                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
+                        <button onclick="location.href='#PLAYABLE'">PLAYABLE</button>
+                    </div>
+
+                    <!--
+                    <div class="grid-item-portfolio-buttons  topMargin-portfolio-buttons">
+                        <button onclick="location.href='#RECENT'">RECENT</button>
+                    </div>
+-->
+                </div>
             </div>
         </div>
     </div>
-
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
 
     <div class="video-responsive">
-        <iframe style="border: none" width="560" height="315" src="https://www.youtube.com/embed/-uYxIEna4_Q" allowfullscreen></iframe>
+        <iframe style="border: 0" width="560" height="315" src="https://www.youtube.com/embed/-uYxIEna4_Q" allowfullscreen></iframe>
     </div>
 
     <div class="bgimg-2">
@@ -59,74 +60,278 @@
         </div>
     </div>
 
-    <div class="section1">
-        <div class="grid-container sideMargin">
-            <div class="grid-item  topMargin">
-                <a href="https://www.linkedin.com/in/jackedunphy/">
-                    <img src="Images/LinkedIn-logo.png" class="imgLogo" alt="LinkedIn logo">
-                </a>
-                <h3>LinkedIn <br>
-                    Qualifications and Experience.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.linkedin.com/in/jackedunphy/">Learn more</a></div>-->
+    <div class="game-div" id="3D">
+        <h1><br>3D ART</h1>
+        <h3>These can also been viewed on Artstation</h3>
+        <div class="textAlignCentre"><a href="https://www.artstation.com/iloveyourface">Click Here</a></div>
+        <div class="game-div">
+            <div class="row">
+                <div class="game-column game-left" style="">
+                    <div class="video-responsive2">
+                        <iframe style="border: 0" width="560" height="315" src="https://www.youtube.com/embed/CvCO1bxQKpA" allowfullscreen></iframe>
+                    </div>
+                </div>
 
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://iloveyourface.itch.io/">
-                    <img src="Images/Itch-logo.png" class="imgLogo" alt="Itch.io logo">
-                </a>
-                <h3>Itch.io <br>
-                    Some of my published games.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://iloveyourface.itch.io/">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://www.instagram.com/jackedunphy">
-                    <img src="Images/Insta-logo.png" class="imgLogo" alt="Instagram logo">
-                </a>
-                <h3>Instagram <br>
-                    The imagery of my latest projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Learn more</a></div>-->
+                <div class="game-column game-right" style="">
+                    <h2>Colorful Low-poly City Asset Pack</h2>
+                    <p>Unity asset pack modelled in Blender. Textured from a gradient pallette created in Photoshop. Rendered in the Unity3D game engine.</p>
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/LPC2.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/LPC3.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/LPC4.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/LPC1.jpg" alt="Another Runner Game">
+                </div>
             </div>
         </div>
 
-        <div class="grid-container sideMargin">
-            <div class="grid-item  bottomMargin  topMargin">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Sketchfab-logo2.png" class="imgLogo" alt="Sketchfab logo">
-                </a>
-                <h3>Sketchfab <br>
-                    My 3D art assets.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://sketchfab.com/iLoveYourFace">Learn more</a></div>-->
+        <div class="game-div">
+            <div class="row">
+                <div class="game-column game-left" style="">
+                    <div class="video-responsive2">
+                        <iframe style="border: 0" width="560" height="315" src="https://www.youtube.com/embed/OzXWanNtGS0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="game-column game-right" style="">
+                    <h2>Old Kitchen UE5</h2>
+                    <p>Rendered in Unreal Engine 5 using Lumen. Modeled in Blender and textured in Substance Painter by yours truly.
+                        Plants and fruit assets from Quixel Megascans.</p>
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/Kitchen2.jpeg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/Kitchen3.jpeg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/Kitchen1.jpeg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/Kitchen4.jpeg" alt="Another Runner Game">
+                </div>
             </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Play-Logo.png" class="imgLogo" alt="Google Play logo">
-                </a>
-                <h3>Google Play <br>
-                    My games published on Android.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">Learn more</a></div>-->
+        </div>
+
+        <div class="game-div">
+            <div class="row">
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/bedroom3.jpg" alt="Another Runner Game">
+                </div>
+
+                <div class="game-column game-right" style="">
+                    <h2>Isometric Bedroom</h2>
+                    <p>Modelled in Blender. Textured from a gradient pallette created in Photoshop.</p>
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/bedroom2.jpg" alt="Another Runner Game">
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/bedroomrender.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/bedroomwireframe.jpg" alt="Another Runner Game">
+                </div>
             </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://www.artstation.com/iloveyourface">
-                    <img src="Images/Artstation-logo.png" class="imgLogo" alt="Artstation Logo">
-                </a>
-                <h3>Artstation<br>
-                    My latest art projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://twitter.com/jackedunphy">Learn more</a></div>-->
+        </div>
+        <div class="game-div">
+            <div class="row">
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom8.jpg" alt="Another Runner Game">
+                </div>
+
+                <div class="game-column game-right" style="">
+                    <h2>Isometric Gameroom</h2>
+                    <p>Modelled in Blender. Textured from a gradient pallette created in Photoshop.</p>
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom7.jpg" alt="Another Runner Game">
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom2.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom3.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/gameroom4.jpg" alt="Another Runner Game">
+                </div>
+
             </div>
+        </div>
+        <h1><br></h1>
+    </div>
+
+    <div class="game-div" id="DESIGN">
+        <h1><br>DESIGN<br><br></h1>
+        <div class="game-div">
+            <div class="row">
+                <div class="game-column game-left" style="">
+                    <div class="video-responsive2">
+                        <iframe style="border: 0" width="560" height="315" src="https://www.youtube.com/embed/7yKFZmh25-o" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="game-column game-right" style="">
+                    <h2>Plane Crash Level Design - UE5</h2>
+                    <p>
+                        Created using existing assets (not my own) and Megascans + UE5 modelling tools.
+                        <br><br>
+                        The plan for this project was to utilize this plane asset in a short linear level design while learning UE5.
+                    </p>
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <div class="video-responsive2">
+                        <iframe style="border: 0" width="560" height="315" src="https://www.youtube.com/embed/tItDbHocTvo" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/pce1.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/pce2.jpg" alt="Another Runner Game">
+                </div>
+                <div class="game-column game-left" style="">
+                    <img class="game" src="Images/pce3.jpg" alt="Another Runner Game">
+                </div>
+            </div>
+        </div>
+
+        <div id="PLAYABLE" style="">
+            <h1><br>PLAYABLE</h1>
+            <p style="text-align: center">(CLICK AN IMAGE TO PLAY)</p>
+
+            <div class="game-div">
+                <div class="row">
+                    <div class="game-column game-left" style="">
+                        <a href="anotherRunnerGame.html"><img class="game" src="Images/AnotherRunner.jpg" alt="Another Runner Game"></a>
+                    </div>
+                    <div class="game-column game-right" style="">
+                        <h2>ANOTHER RUNNER</h2>
+                        Programming and Design by me. Created over a week.
+                        <br><br>
+                        <p>Beat your highscore and buy donuts with the coins collected. You know the drill.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-div">
+                <div class="row">
+                    <div class="game-column game-right" style="text-align: right">
+                        <h2>R.O.O.S.</h2>
+                        Programming and Design by me. Created for the Ludum dare game jam.
+                        <br><br>
+                        <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
+                    </div>
+                    <div class="game-column game-left" style="">
+                        <a href="roosGame.html"><img class="game" src="Images/roos.jpg" alt="Running Out of Space Game"></a>
+                    </div>
+                </div>
+            </div>
+            <!--
+<div class="game-div">
+    <div class="row">
+        <div class="game-column game-left" style="">
+            <a href="restGame.html"><img class="game" src="Images/NeonGame2.png" alt="REST Game"></a>
+        </div>
+        <div class="game-column game-right" style="">
+            <h2>REST</h2>
+            <p>Everything you stand on falls away, so you'll quickly find yourself running out of space to walk... Move from cube to cube and use your rocket launcher to explode yourself into the air to help you stay alive as long as possible and compete against others for a highscore!</p>
         </div>
     </div>
+</div>
+-->
+        </div>
+        <!--      <div class="row">
+            <div class="column">
+                <img src="Images/Another%20Runner_2020-02-11-14-35-57.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/AnotherRunner.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/AnotherRunnerShop.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20190711-012106.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/gorB4V.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/mckjL3.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/forest.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/9HpHrA.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/IGHjKZ.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/PkQSOf.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/spook.png" style="width: 100%" alt="Portfolio Image">
+            </div>
+            <div class="column">
+                <img src="Images/PicturesScreenshot_20191119-160520_SpaceMagnet.jpg_shrinked.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20190711-012101.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191119-160437_SpaceMagnet.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191026-174631_Photos.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/PicturesMooMesaPoster.jpg_shrinked.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Desktop2.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/NeonGame2.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/roosg.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/_YEnmF.jpg" style="width: 100%" alt="Portfolio Image">
+
+            </div>
+            <div class="column">
+                <img src="Images/Screenshot_20190807-191959_SHAPE%20Neon%20Shooter.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191026-174558_Photos.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191026-174623_Photos.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Annotation%202019-12-11%20014915.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/PicturesMooMesaPoster2.jpg_shrinked.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Desktop%20Screenshot%202018.04.24%20-%2000.16.27.74.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/NeonGame.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Desktop1.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/2019-12-11%20(2).png" style="width: 100%" alt="Portfolio Image">
+
+            </div>
+            <div class="column">
+                <img src="Images/Screenshot_20191119-160505_SpaceMagnet.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191127-214935_SHAPE%20Neon%20Shooter.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/Screenshot_20191205-213947_Retro%20Reach.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/b2b%20-%20Copy.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/forest.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/PicturesMooMesaPoster3Neon3.jpg_shrinked.jpg" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/soalWj.png" style="width: 100%" alt="Portfolio Image">
+                <img src="Images/UWw2me.png" style="width: 100%" alt="Portfolio Image">
+            </div>
+        </div>-->
+        <h1><br></h1>
+    </div>
+
+
 
     <div class="bgimg-2">
         <div class="insideplx2">
         </div>
     </div>
+    <!--
+    <h1 id="RECENT"><br>RECENT</h1>
+    <h3>All recent work can be seen on my Instagram</h3>
+    <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Click Here</a></div>
 
-    <!-- Place <div> tag where you want the feed to appear -->
     <div class="sideMargin topMargin bottomMargin">
         <div id="curator-feed"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
     </div>
+-->
+    <div id="Socials"></div>
 
+    <div class="bgimg-2">
+        <div class="insideplx2">
+        </div>
+    </div>
 
+    <!--
     <script>
         (function() {
             var i, e, d = document,
@@ -139,33 +344,7 @@
         })();
 
     </script>
-
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000);
-        }
-
-    </script>
-
+-->
 
 
 </body>

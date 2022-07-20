@@ -2,35 +2,24 @@
 <html lang="en">
 
 <head>
+
     <link rel="stylesheet" href="main.css">
     <script src="navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta charset="utf-8" />
-    <title>About</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#Header').load('Header.html')
+            $('#Socials').load('Socials.html')
+        });
+
+    </script>
+    <div id="Header"></div>
+    <title>RESUME</title>
 </head>
 
 <body>
-
-    <div id="navbar">
-        <a href="index.html" id="logo">JACKEDUNPHY.</a>
-        <div id="navbar-right">
-            <a href="index.html" style="font-weight: 400">HOME</a>
-            <a style="font-weight: 400">|</a>
-            <div class="dropdown">
-                <a href="Portfolio.html" style="font-weight: 400" class="active">PORTFOLIO</a>
-                <div class="dropdown-content">
-                    <a style="font-weight: 400" href="Portfolio.html#3D">> 3D ART</a>
-                    <a style="font-weight: 400" href="Portfolio.html#PLAYABLE">> PLAYABLE</a>
-                    <a style="font-weight: 400" href="Portfolio.html#DESIGN">> DESIGN</a>
-                    <a style="font-weight: 400" href="Portfolio.html#RECENT">> RECENT</a>
-                </div>
-            </div>
-            <a style="font-weight: 400">|</a>
-            <a href="About.html" style="font-weight: 400">ABOUT </a>
-            <a style="font-weight: 400">|</a>
-            <a href="contact.html" style="font-weight: 400">CONTACT</a>
-        </div>
-    </div>
 
     <div class="bgimg-7" id="home">
         <div class="insideplx">
@@ -59,7 +48,7 @@
                 </h2>
 
                 <p style="line-height: 250%; font-size: 1.2em">
-                    Substance Painter and Designer
+                    Substance Painter
                     <br>
                     Substance Designer
                     <br>
@@ -100,43 +89,43 @@
                 <h2 style="margin-left: 3%">EDUCATION</h2>
             </div>
             <div style="margin-left: 3%">
-                <p>
-                    <span style="color: gray">University of Canberra</span>
-                    <br>
 
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Bachelor of Games and Interactive Design</span>
+                <p>
+                    <resumeSub><span>University of Canberra</span></resumeSub>
                     <br>
-                    <span style="color: gray">2017 - MAY 2020</span>
+                    <resumeHead><span>Bachelor of Games and Interactive Design</span></resumeHead>
                     <br>
-                    <span style="font-size: 1.2em">GPA 5.59, WAM 75%. Developing skills in areas such as game design, game art, and computer programming. Including key concepts such as game mechanics, artificial intelligence, 3D graphics, animation, and real-time technology.</span>
+                    <resumeSub><span>2017 - MAY 2020</span></resumeSub>
+                    <br>
+                    <span>GPA 5.59, WAM 75%. Developing skills in areas such as game design, game art, and computer programming. Including key concepts such as game mechanics, artificial intelligence, 3D graphics, animation, and real-time technology.</span>
                 </p>
 
                 <p>
-                    <span style="color: gray"><br>TAFE QLD</span>
+                    <resumeSub><span><br>TAFE QLD</span></resumeSub>
                     <br>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Diploma of Digital and Interactive Media</span>
+                    <resumeHead><span>Diploma of Digital and Interactive Media</span></resumeHead>
                     <br>
-                    <span style="color: gray">2017</span>
+                    <resumeSub><span style="color: gray">2017</span></resumeSub>
                     <br>
                     <span style="font-size: 1.2em">Developing an understanding of the games design and production process, from concept development right through to the production methodologies.</span>
                 </p>
 
 
                 <p>
-                    <span style="color: gray"><br>TAFE QLD<br></span>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Certificate III in Media</span>
+                    <resumeSub><span><br>TAFE QLD<br></span></resumeSub>
+                    <resumeHead><span>Certificate III in Media</span></resumeHead>
                     <br>
-                    <span style="color: gray">2014</span>
+                    <resumeSub><span>2014</span></resumeSub>
                     <br>
                     <span style="font-size: 1.2em">Learning industry standard software including Adobe Photoshop, Flash, Dreamweaver and InDesign.</span>
                 </p>
 
                 <p>
-                    <span style="color: gray"><br>Kilcoy High School</span>
+                    <resumeSub><span><br>Kilcoy High School</span></resumeSub>
                     <br>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Year 12 QCE + Certificate I in IT + Certificate I Business</span>
+                    <resumeHead><span>Year 12 QCE + Certificate I in IT + Certificate I Business</span></resumeHead>
                     <br>
-                    <span style="color: gray">2014</span>
+                    <resumeSub><span>2014</span></resumeSub>
                 </p>
 
                 <p style="line-height: 0"><br></p>
@@ -150,78 +139,91 @@
             <div style="margin-left: 3%">
 
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Information Technology Help Desk Technician - GZD</span>
+                    <resumeSub><span>GZD</span></resumeSub>
                     <br>
-                    <span style="color: gray">SEPT 2021 – JUNE 2022</span>
+                    <resumeHead><span>Information Technology Help Desk Technician</span></resumeHead>
                     <br>
-                    <span style="font-size: 1.2em">Business IT support, specializing in Pharmacy, Medical, and General Business.</span>
+                    <resumeSub><span>SEPT 2021 – JUNE 2022</span></resumeSub>
+                    <br>
+                    <span>Business IT support, specializing in Pharmacy, Medical, and General Business.</span>
                 </p>
 
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Computer-Assisted Telephone Interviewer - Q&A Market Research</span>
                     <br>
-                    <span style="color: gray">JUNE 2021 – OCT 2021</span>
+                    <resumeSub><span>Q&A Market Research</span></resumeSub>
                     <br>
-                    <span style="font-size: 1.2em">Performing market research with the general public and B2B for various organizations including the Federal Government, AusPost, CSIRO, Centrelink, YouGov. </span>
+                    <resumeHead><span>Computer-Assisted Telephone Interviewer</span></resumeHead>
+                    <br>
+                    <resumeSub><span>JUNE 2021 – OCT 2021</span></resumeSub>
+                    <br>
+                    <span>Performing market research with the general public and B2B for various organizations including the Federal Government, AusPost, CSIRO, Centrelink, YouGov. </span>
                 </p>
 
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">3d Printing Esty Store Manager - Self-Employed</span>
                     <br>
-                    <span style="color: gray">DEC 2020 – JUNE 2021</span>
+                    <resumeSub><span>Self-Employed</span></resumeSub>
                     <br>
-                    <span style="font-size: 1.2em">Design, Print, and sell 3D prints locally and worldwide through e-commerce. Managing online marketing.</span>
+                    <resumeHead><span>3d Printing Esty Store Manager</span></resumeHead>
+                    <br>
+                    <resumeSub><span>DEC 2020 – JUNE 2021</span></resumeSub>
+                    <br>
+                    <span>Design, Print, and sell 3D prints locally and worldwide through e-commerce. Managing online marketing.</span>
                 </p>
 
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Unity Developer - iLoveYourFace</span>
                     <br>
-                    <span style="color: gray">AUG 2018 – JUNE 2021</span>
+                    <resumeSub><span>iLoveYourFace</span></resumeSub>
                     <br>
-                    <span style="font-size: 1.2em">Creating experiences for platforms and mediums including Virtual Reality, PC, Mobile, WebGL and Augmented Reality. Publishing multiple interactive games and contracting with global clients. </span>
+                    <resumeHead><span>Unity Developer</span></resumeHead>
+                    <br>
+                    <resumeSub><span>AUG 2018 – JUNE 2021</span></resumeSub>
+                    <br>
+                    <span>Creating experiences for platforms and mediums including Virtual Reality, PC, Mobile, WebGL and Augmented Reality. Publishing multiple interactive games and contracting with global clients. </span>
                     <br><br>
-                    <span style="font-size: 1.2em">Related Projects
+                    <span>Related Projects
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Running Out of Space (FPS on PC/Web) Solo project. Ludum Dare Top 100 in the world (out of 3000+ submissions).
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // SHAPE: Neon Shooter (Ad supported Arcade Shooter published on Android’s Play Store) Solo project.
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Retro Reach (Ad supported Puzzle Game published on Play Store) Solo project.
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Console apps including an Interactive Pathfinding Tool, Tax Calculator, Encryption and a Decryption Tool.
                     </span>
                 </p>
 
                 <p><br></p>
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Game Developer – Studio Kaboom!</span>
+                    <resumeSub><span>Studio Kaboom!</span></resumeSub>
                     <br>
-                    <span style="color: gray">FEB 2018 – PRESENT</span>
+                    <resumeHead><span>Game Developer</span></resumeHead>
                     <br>
-                    <span style="font-size: 1.2em">University of Canberra’s on-site studio where students can collaborate to build an interactive experience. </span>
+                    <resumeSub><span>FEB 2018 – PRESENT</span></resumeSub>
+                    <br>
+                    <span>University of Canberra’s on-site studio where students can collaborate to build an interactive experience. </span>
                     <br><br>
-                    <span style="font-size: 1.2em">Related Projects
+                    <span>Related Projects
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // TechNaut (VR Adventure on SteamVR/HTC Vive) Sole programmer, project leader and scrum master.
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // YEET Shooting (VR Shooting Simulator) Lead Programmer, technical artist, project leader and scrum master.
                     </span>
                 </p>
@@ -229,32 +231,36 @@
 
                 <p><br></p>
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Computer Assemble and Repairs – Self Employed </span>
+                    <resumeSub><span>Self Employed </span></resumeSub>
                     <br>
-                    <span style="color: gray">MAR 2015 – 2019</span>
+                    <resumeHead><span>Computer Assemble and Repairs</span></resumeHead>
                     <br>
-                    <span style="font-size: 1.2em">Purchasing faulty computers, repairing, reassembling and selling on marketplaces. Custom building desktops.</span>
+                    <resumeSub><span>MAR 2015 – 2019</span></resumeSub>
+                    <br>
+                    <span>Purchasing faulty computers, repairing, reassembling and selling on marketplaces. Custom building desktops.</span>
                 </p>
 
 
                 <p><br></p>
                 <p>
-                    <span style="color: rgb(1, 171, 170); font-size: 1.2em;">Retail Assistant – IGA Supermarkets</span>
+                    <resumeSub><span>IGA Supermarkets</span></resumeSub>
                     <br>
-                    <span style="color: gray">JAN 2015 – 2017</span>
+                    <resumeHead><span>Retail Assistant</span></resumeHead>
+                    <br>
+                    <resumeSub><span>JAN 2015 – 2017</span></resumeSub>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Customer Service/Cashier – Receive, manage and resolve customer orders, payments and complaints. Communicate with customers.
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Produce/Grocery – Manage stock orders and deliveries over the phone and in-person. Record product wastage into spreadsheet.
                     </span>
                 </p>
                 <p class="hang">
-                    <span style="font-size: 1.2em">
+                    <span>
                         // Meat/Deli – Operate and maintain machinery. Cut, package and label products. Use thermometers, ovens, weighing scales and other electronics.
                     </span>
                 </p>
@@ -268,62 +274,7 @@
         </div>
     </div>
 
-    <div class="section1">
-        <div class="grid-container sideMargin">
-            <div class="grid-item  topMargin">
-                <a href="https://www.linkedin.com/in/jackedunphy/">
-                    <img src="Images/LinkedIn-logo.png" class="imgLogo" alt="LinkedIn logo">
-                </a>
-                <h3>LinkedIn <br>
-                    Qualifications and Experience.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.linkedin.com/in/jackedunphy/">Learn more</a></div>-->
-
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://iloveyourface.itch.io/">
-                    <img src="Images/Itch-logo.png" class="imgLogo" alt="Itch.io logo">
-                </a>
-                <h3>Itch.io <br>
-                    Some of my published games.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://iloveyourface.itch.io/">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  topMargin">
-                <a href="https://www.instagram.com/jackedunphy">
-                    <img src="Images/Insta-logo.png" class="imgLogo" alt="Instagram logo">
-                </a>
-                <h3>Instagram <br>
-                    The imagery of my latest projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://www.instagram.com/jackedunphy">Learn more</a></div>-->
-            </div>
-        </div>
-
-        <div class="grid-container sideMargin">
-            <div class="grid-item  bottomMargin  topMargin">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Sketchfab-logo2.png" class="imgLogo" alt="Sketchfab logo">
-                </a>
-                <h3>Sketchfab <br>
-                    My 3D art assets.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://sketchfab.com/iLoveYourFace">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">
-                    <img src="Images/Play-Logo.png" class="imgLogo" alt="Google Play logo">
-                </a>
-                <h3>Google Play <br>
-                    My games published on Android.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://play.google.com/store/apps/developer?id=iLoveYourFace&hl=en_US">Learn more</a></div>-->
-            </div>
-            <div class="grid-item  bottomMargin topMargin ">
-                <a href="https://www.artstation.com/iloveyourface">
-                    <img src="Images/Artstation-logo.png" class="imgLogo" alt="Artstation Logo">
-                </a>
-                <h3>Artstation<br>
-                    My latest art projects.</h3>
-                <!--                <div class="textAlignCentre"><a href="https://twitter.com/jackedunphy">Learn more</a></div>-->
-            </div>
-        </div>
-    </div>
+    <div id="Socials"></div>
 
     <div class="bgimg-2">
         <div class="insideplx2">
